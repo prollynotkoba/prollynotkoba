@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+  <link rel="icon" type="image/x-icon" href="my assets/koba2.jpg">
+  <title>Marq Francis Capilos | App Dev Student</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+    :root {
+      --primary-color: #fbfdf6;
+      --primary-color-dark: #17252a;
+      --secondary-color: #2b7a78;
+      --text-dark: #17252a;
+      --text-light: #feffff;
+      --extra-light: #3aafa9;
+      --max-width: 1200px;
+    }
+
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--extra-light);
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    nav {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #fbfdf6;
+      z-index: 99;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav_content {
+      max-width: var(--max-width);
+      margin: auto;
+      padding: 1.5rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    nav .logo a {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--primary-color);
+      transition: 0.3s;
+    }
+
+    nav .logo a:hover {
+      color: var(--primary-color-dark);
+    }
+
+    nav .checkbox {
+      display: none;
+    }
+
+    nav input {
+      display: none;
+    }
+
+    nav .checkbox i {
+      font-size: 2rem; 
+      color: var(--secondary-color);
+      cursor: pointer;
+    }
+
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      list-style: none;
+      transition: left 0.4s;
+    }
+
+    ul li a {
+      padding: 0.5rem 1rem;
+      border: 2px solid transparent;
+      font-weight: 600;
+      color: var(--text-dark);
+      transition: 0.3s;
+    }
+
+    ul li a:hover {
+      border-top-color: var(--secondary-color);
+      border-bottom-color: var(--secondary-color);
+      color: var(--secondary-color);
+    }
+
+    .section {
+      background-color: var(--extra-light);
+    }
+
+    .section_container {
+      min-height: 100vh;
+      max-width: var(--max-width);
+      margin: auto;
+      padding: 1rem;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 4rem;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .subtitle {
+      letter-spacing: 2px;
+      color: var(--text-light);
+      font-weight: 600;
+      margin-bottom: .5rem;
+    }
+
+    .title {
+      font-size: 2.5rem;
+      font-weight: 400;
+      line-height: 3rem;
+      color: var(--text-dark);
+      margin-bottom: 1rem;
+    }
+
+    .title span {
+      font-weight: 600;
+ }
+
+    .description {
+      line-height: 1.5rem;
+      color: var(--text-light);
+      margin-bottom: 2rem;
+    }
+
+    .action_btns {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .action_btns a {
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      padding: 1rem 2rem;
+      outline: none;
+      border: 2px solid var(--primary-color);
+      border-radius: 10px;
+      transition: 0.3s;
+      cursor: pointer;
+      text-decoration: none;
+      color: var(--text-light);
+      background-color: var(--text-dark);
+    }
+
+    .action_btns a:hover {
+      background-color: var(--primary-color);
+      color: var(--text-dark);
+    }
+
+    .image {
+      display: grid;
+      place-items: center;
+    }
+
+    .image img {
+      width: min(25rem, 90%);
+      border-radius: 100% ;
+    }
+
+          @media screen and (max-width: 600px) {
+
+      .nav_content {
+        padding: 1rem 0.5rem;
+      }
+
+      nav .logo a {
+        font-size: 1.5rem;
+      }
+
+      nav .checkbox i {
+        font-size: 1.3rem;
+      }
+
+      ul {
+        top: 65px;
+        height: calc(100vh - 65px);
+      }
+
+      ul li a {
+        font-size: 1rem;
+        padding: 0.3rem 0.5rem;
+      }
+    }
+
+    @media (max-width: 850px) {
+      nav .checkbox {
+        display: block;
+      }
+
+      ul {
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 85px );
+        left: -100%;
+        top: 85px;
+        background-color: var(--extra-light);
+        flex-direction: column;
+        justify-content: center;
+        gap: 3rem;
+      }
+
+      nav #check:checked ~ul {
+        left: 0;
+      }
+
+      ul li a {
+        font-size:  1.25rem;
+      }
+
+      .section_container {
+        padding: 10rem 1rem 5rem 1rem;
+        text-align: center;
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+      .image {
+        grid-area: 1/1/2/2;
+      }
+
+      .action_btns {
+        margin: auto;
+      }
+    }
+  </style>
+</head>
+  <body>
+    <nav>
+      <div class="nav_content">
+        <div class="logo">
+          <a href="main.html">
+            <img src="my assets/koba.jpg" alt="Koba Logo" width="200px">
+          </a>
+        </div>
+        <label for="check" class="checkbox">
+          <i class="ri-menu-line"></i>
+        </label>
+        <input type="checkbox" name="check" id="check">
+        <ul>
+          <li><a href="main.html">Home</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="section">
+      <div class="section_container">
+        <div class="content">
+          <p class="subtitle">HELLO</p>
+          <h1 class="title">
+            I'm <span>Koba <br>An aspiring Application Developer</span>
+          </h1>
+          <p class="description">
+            Welcome to my website! As an aspiring Application Development Student, I am eager to learn new skills and develop my character further. 
+            I am currently pursuing my higher education to foster discipline and  responsibility. I am passionate about learning and growing as a person.
+          </p>
+          <div class="action_btns">
+            <a href="contact.html" class="contact_me">Contact Me!</a>
+            <a href="my assets/Capilos CV Resume.pdf" class="cv" download="Capilos_CV_Resume.pdf">Download Resume</a>
+          </div>
+        </div>
+        <div class="image">
+          <img src="my assets/ijin.jpg" alt="profile">
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
