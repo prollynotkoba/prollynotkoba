@@ -1,4 +1,4 @@
-About [Your Website Name]
+About Marq Francis Capilos | App Dev Student
 ==========================
 
 Marq Francis Capilos | App Dev Student is a website that I made for educational purposes only.
