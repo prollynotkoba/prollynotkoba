@@ -180,55 +180,79 @@
       border-radius: 95px ;
     }
 
-    @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
+  .nav_content {
+    padding: 1rem 0.5rem;
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
+  }
 
-      .nav_content {
-        padding: 1rem 0.5rem;
-      }
+  nav .logo a {
+    font-size: 1.5rem; /* Slightly smaller logo */
+  }
 
-      nav .logo a {
-        font-size: 2rem;
-      }
+  nav .checkbox i {
+    font-size: 1.5rem; /* Smaller menu icon */
+  }
 
-      nav .checkbox i {
-        font-size: 2rem;
-      }
+  ul {
+    flex-direction: column; /* Stack navigation items vertically */
+    align-items: flex-start; /* Align items to the start */
+    width: 100%; /* Full width for the menu */
+  }
 
-      ul {
-        top: 65px;
-        height: calc(100vh - 65px);
-      }
+  ul li a {
+    font-size: 1rem; /* Smaller font size for links */
+    padding: 0.5rem 1rem; /* More padding for better touch targets */
+  }
 
-      ul li a {
-        font-size: 1.25rem;
-        padding: 0.3rem 0.5rem;
-      }
-    }
+  .header h1 {
+    font-size: 1.8rem; /* Smaller header size */
+  }
 
-    @media (max-width: 750px) {
-      nav .checkbox {
-        display: block;
-      }
+  .container {
+    padding: 0 1rem; /* Reduce padding */
+    grid-template-columns: 1fr; /* Single column layout */
+  }
 
-      ul {
-        position: absolute;
-        width: 100%;
-        height: calc(100vh - 85px );
-        left: -100%;
-        top: 85px;
-        background-color: var(--extra-light);
-        flex-direction: column;
-        justify-content: center;
-        gap: 3rem;
-      }
+  .skill-box {
+    padding: 1rem; /* Adjust padding for skill boxes */
+  }
 
-      nav #check:checked ~ul {
-        left: 0;
-      }
+  .skill-title h3 {
+    font-size: 1.2rem; /* Smaller skill title size */
+  }
 
-      ul li a {
-        font-size:  1.25rem;
-      }
+  .skill-box p {
+    font-size: 0.9rem; /* Smaller paragraph text */
+  }
+}
+
+@media (max-width: 750px) {
+  nav .checkbox {
+    display: block; /* Show the checkbox for mobile menu */
+  }
+
+  ul {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 85px);
+    left: -100%;
+    top: 85px;
+    background-color: var(--extra-light);
+    flex-direction: column; /* Ensure vertical stacking */
+    justify-content: center;
+    gap: 1.5rem; /* Adjust gap for better spacing */
+  }
+
+  nav #check:checked ~ul {
+    left: 0; /* Show the menu when checked */
+  }
+
+  ul li a {
+    font-size: 1rem; /* Consistent font size for links */
+  }
+}
 
       .section_container {
         padding: 10rem 1rem 5rem 1rem;
