@@ -193,48 +193,69 @@
         border-radius: 5px;
       }
     /* Responsive design for smaller screens */
-    @media screen and (max-width: 600px) {
+   @media screen and (max-width: 600px) {
+  .nav_content {
+    padding: 1rem 0.5rem; /* Reduce padding for smaller screens */
+  }
 
-      .nav_content {
-        padding: 1rem 0.5rem;
-      }
+  nav .logo a {
+    font-size: 1.5rem; /* Keep logo size appropriate */
+  }
 
-      nav .logo a {
-        font-size: 1.5rem;
-      }
+  nav .checkbox i {
+    font-size: 1.3rem; /* Smaller menu icon */
+  }
 
-      nav .checkbox i {
-        font-size: 1.3rem;
-      }
+  ul {
+    top: 65px; /* Adjust position of the menu */
+    height: calc(100vh - 65px); /* Adjust height */
+    flex-direction: column; /* Stack menu items vertically */
+  }
 
-      ul {
-        top: 65px;
-        height: calc(100vh - 65px);
-      }
+  ul li a {
+    font-size: 1rem; /* Smaller font size for links */
+    padding: 0.5rem 1rem; /* Adjust padding for buttons */
+  }
 
-      ul li a {
-        font-size: 1rem;
-        padding: 0.3rem 0.5rem;
-      }
+  .section {
+    padding: 1rem; /* Add padding to section */
+  }
 
-      .timeline::after {
-        left: 31px;
-      }
-      
-      .timeline-item {
-        width: 100%;
-        padding-left: 50px;
-        padding-right: 15px;
-      }
-      
-      .timeline-item::after {
-        left: 15px;
-      }
-      
-      .timeline-item:nth-child(even) {
-        left: 0%;
-      }
-    }
+  .educational-title {
+    font-size: 1.5rem; /* Adjust title size for smaller screens */
+    margin-bottom: 1rem; /* Add margin below title */
+  }
+
+  .timeline {
+    padding: 20px 10px; /* Adjust padding for timeline */
+  }
+
+  .timeline-item {
+    width: 100%; /* Full width for timeline items */
+    padding: 10px; /* Adjust padding */
+  }
+
+  .timeline-item::after {
+    left: 15px; /* Adjust position of the circle */
+  }
+
+  .timeline-content {
+    padding: 10px; /* Adjust padding for content */
+  }
+
+  h1.current, h1.past {
+    font-size: 1.2em; /* Smaller font size for headings */
+  }
+
+  h3.yr {
+    font-size: 1em; /* Smaller font size for year */
+  }
+
+  .image-container img {
+    max-width: 80px; /* Smaller image size */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
 
     @media (max-width: 850px) {
       nav .checkbox {
