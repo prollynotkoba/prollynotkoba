@@ -218,23 +218,33 @@
         padding: 0.3rem 0.5rem;
       }
 
-      .timeline::after {
-        left: 31px;
-      }
-      
-      .timeline-item {
-        width: 100%;
-        padding-left: 50px;
-        padding-right: 15px;
-      }
-      
-      .timeline-item::after {
-        left: 15px;
-      }
-      
-      .timeline-item:nth-child(even) {
-        left: 0%;
-      }
+  .timeline-item {
+    width: 100%; /* Full width for timeline items */
+    padding: 10px; /* Adjust padding */
+    left: 0; /* Align all items to the left */
+    position: relative; /* Ensure relative positioning */
+  }
+
+  .timeline-item:nth-child(odd) {
+    left: 0; /* Ensure odd items are aligned left */
+  }
+
+  .timeline-item:nth-child(even) {
+    left: 0; /* Ensure even items are also aligned left */
+  }
+
+  .timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 25px; /* Circle size */
+    height: 25px; /* Circle size */
+    left: -12px; /* Position circle to the left of the item */
+    background-color: #fff; /* Circle background color */
+    border: 4px solid var(--secondary-color); /* Circle border color */
+    top: 15px; /* Adjust vertical position */
+    border-radius: 50%; /* Make it circular */
+    z-index: 1; /* Ensure it appears above other content */
+  }
     }
 
     @media (max-width: 850px) {
