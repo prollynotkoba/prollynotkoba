@@ -210,7 +210,14 @@
 
       ul {
         top: 65px;
-        height: calc(100vh - 65px);
+        width: 100wh;
+        height: 100vh;
+        left: -100%;
+        background-color: var(--extra-light);
+        flex-direction: column;
+        justify-content: center;
+        gap: 3;
+        transition: left 0.3s ease;
       }
 
       ul li a {
