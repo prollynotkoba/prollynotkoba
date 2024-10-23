@@ -228,32 +228,6 @@
   }
 }
 
-@media (max-width: 751px) {
-  nav .checkbox {
-    display: block; /* Show the checkbox for mobile menu */
-  }
-
-  ul {
-    position: absolute;
-    width: 100%;
-    height: calc(100vh - 85px);
-    left: -100%;
-    top: 85px;
-    background-color: var(--extra-light);
-    flex-direction: column; /* Ensure vertical stacking */
-    justify-content: center;
-    gap: 1.5rem; /* Adjust gap for better spacing */
-  }
-
-  nav #check:checked ~ul {
-    left: 0; /* Show the menu when checked */
-  }
-
-  ul li a {
-    font-size: 1rem; /* Consistent font size for links */
-  }
-}
-
       .section_container {
         padding: 10rem 1rem 5rem 1rem;
         text-align: center;
