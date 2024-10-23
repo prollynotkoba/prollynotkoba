@@ -1,16 +1,20 @@
-## Hi there 👋
+About [Your Website Name]
+==========================
 
-<!--
-**prollynotkoba/prollynotkoba** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Marq Francis Capilos | App Dev Student is a website that I made for educational purposes only.
 
-Here are some ideas to get you started:
+Getting Started
+---------------
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+
+### License
+
+Marq Francis Capilos | App Dev Student is licensed under the prollynotkoba license. See [LICENSE.txt](LICENSE.txt) for more information.
+
+### Authors
+
+Marq Francis A. Capilos - I-B AppDev Student from University of Makati
+
+### Special Thanks
+
+I want to say thanks to Bro Code for the learning materials from his YouTube channel to build my website alongside the W3schools, GeekforGeeks, & StacksOverflow without you guys I cannot finish my project.
