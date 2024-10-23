@@ -254,30 +254,35 @@
     margin-bottom: 1rem; /* Add margin below title */
   }
 
-  .timeline {
-    padding: 20px 10px; /* Adjust padding for timeline */
-  }
-
   .timeline-item {
     width: 100%; /* Full width for timeline items */
     padding: 10px; /* Adjust padding */
+    left: 0; /* Align items to the left */
   }
 
-  .timeline-content {
-    padding: 10px; /* Adjust padding for content */
+  .timeline-item:nth-child(odd) {
+    left: 0; /* Ensure odd items are aligned left */
+  }
+
+  .timeline-item:nth-child(even) {
+    left: 0; /* Ensure even items are also aligned left */
+  }
+
+  .timeline::after {
+    left: 10%; /* Adjust the line position if necessary */
   }
 
   h1.current, h1.past {
     font-size: 1.2em; /* Smaller font size for headings */
   }
 
-    .educational-title {
-      margin-top: 3rem;
-      text-align: center; /* Center the text */
-      font-size: 2rem; /* Font size */
-      font-weight: 1500; /* Bold text */
-      color: var(--text-dark); /* Use your defined color */
-    }
+  .educational-title {
+    margin-top: 3rem;
+    text-align: center; /* Center the text */
+    font-size: 2rem; /* Font size */
+    font-weight: 1500; /* Bold text */
+    color: var(--text-dark); /* Use your defined color */
+  }
   </style>
 </head>
   <body>
