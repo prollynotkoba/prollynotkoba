@@ -166,6 +166,33 @@
       color: var(--text-dark);
       margin-bottom: 1.5rem;
     }
+
+        @media (max-width: 750px) {
+      nav .checkbox {
+        display: block;
+      }
+
+      ul {
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 85px );
+        left: -100%;
+        top: 85px;
+        background-color: var(--extra-light);
+        flex-direction: column;
+        justify-content: center;
+        gap: 3rem;
+      }
+
+      nav #check:checked ~ul {
+        left: 0;
+      }
+
+      ul li a {
+        font-size:  1.25rem;
+      }
+    }
+    
   </style>
 </head>
 <body>
