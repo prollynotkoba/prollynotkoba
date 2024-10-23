@@ -78,9 +78,6 @@
       cursor: pointer;
     }
 
-    nav #check:checked ~ ul {
-      left: 0; /* Show menu when checked */
-    }
 
     ul {
       display: flex;
@@ -183,10 +180,17 @@
       }
 
       ul {
-        margin-left: 20px;
-        margin-bottom: 15px;
+        position: fixed; /* Keep the menu fixed */
+        width: 100%;
+        height: calc(100vh - 85px); /* Full height for mobile menu */
+        left: -100%; /* Hide menu initially */
+        top: 85px; /* Position below the nav */
+        background-color: var(--extra-light);
+        flex-direction: column; /* Stack items vertically */
+        justify-content: center; /* Center items */
+        gap: 3rem; /* Spacing between items */
+        transition: left 0.3s ease; /* Smooth transition */
       }
-
       .image-container {
         text-align: center;
       }
@@ -211,6 +215,7 @@
   }
 
   ul {
+    position: fixed;
     top: 65px; /* Adjust position of the menu */
     height: calc(100vh - 65px); /* Adjust height */
     flex-direction: column; /* Stack menu items vertically */
