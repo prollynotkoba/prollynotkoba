@@ -247,41 +247,38 @@
   }
     }
 
-    @media (max-width: 850px) {
-      nav .checkbox {
-        display: block;
-      }
+@media (max-width: 750px) {
+  nav .checkbox {
+    display: block; /* Show the checkbox for mobile menu */
+  }
 
-      ul {
-        position: fixed;
-        width: 100%;
-        height: calc(100vh - 85px);
-        left: -100%;
-        top: 85px;
-        background-color: var(--extra-light);
-        flex-direction: column;
-        justify-content: center;
-        gap: 3rem;
-        transition: left 0.3s ease;
-      }
+  ul {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 85px);
+    left: -100%;
+    top: 85px;
+    background-color: var(--extra-light);
+    flex-direction: column; /* Ensure vertical stacking */
+    justify-content: center;
+    gap: 1.5rem; /* Adjust gap for better spacing */
+  }
 
-      nav #check:checked ~ ul {
-        left: 0;
-      }
+  nav #check:checked ~ul {
+    left: 0; /* Show the menu when checked */
+  }
 
-      ul li a {
-        font-size: 1.5rem;
-      }
-    }
-
+  ul li a {
+    font-size: 1rem; /* Consistent font size for links */
+  }
+}
     .educational-title {
       margin-top: 5rem;
       text-align: center; /* Center the text */
       font-size: 2rem; /* Font size */
       font-weight: 1500; /* Bold text */
       color: var(--text-dark); /* Use your defined color */
-    }
-  }
+      }
   </style>
 </head>
   <body>
