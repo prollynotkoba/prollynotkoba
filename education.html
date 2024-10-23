@@ -195,41 +195,31 @@
         border-radius: 5px;
       }
     /* Responsive design for smaller screens */
-    @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
+  .nav_content {
+    padding: 1rem 0.5rem;
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
+  }
 
-      .nav_content {
-        padding: 1rem 0.25rem;
-      }
+  nav .logo a {
+    font-size: 1.5rem; /* Slightly smaller logo */
+  }
 
-      nav #check:checked ~ ul {
-        left: 0; /* Show menu when checkbox is checked */
-      }
-      
-      nav .logo a {
-        font-size: 1.5rem;
-      }
+  nav .checkbox i {
+    font-size: 1.5rem; /* Smaller menu icon */
+  }
 
-      nav .checkbox i {
-        font-size: 1.3rem;
-      }
+  ul {
+    flex-direction: column; /* Stack navigation items vertically */
+    align-items: flex-start; /* Align items to the start */
+    width: 100%; /* Full width for the menu */
+  }
 
-      ul {
-        position: fixed;
-        top: 0;
-        width: 100wh;
-        height: 100vh;
-        left: -100%;
-        background-color: var(--extra-light);
-        flex-direction: column;
-        justify-content: center;
-        gap: 3rem;
-        transition: left 0.3s ease;
-      }
-
-      ul li a {
-        font-size: 1rem;
-        padding: 0.3rem 0.5rem;
-      }
+  ul li a {
+    font-size: 1rem; /* Smaller font size for links */
+    padding: 0.5rem 1rem; /* More padding for better touch targets */
+  }
 
   .timeline-item {
     width: 100%; /* Full width for timeline items */
