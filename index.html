@@ -183,8 +183,8 @@
 @media screen and (max-width: 600px) {
   .nav_content {
     padding: 1rem 0.5rem;
-    flex-direction: column; /* Stack items vertically */
-    align-items: flex-start; /* Align items to the start */
+    flex-direction: row; /* Ensure items are in a row */
+    justify-content: space-between; /* Keep space between logo and menu */
   }
 
   nav .logo a {
@@ -196,9 +196,9 @@
   }
 
   ul {
-    flex-direction: column; /* Stack navigation items vertically */
-    align-items: flex-start; /* Align items to the start */
-    width: 100%; /* Full width for the menu */
+    flex-direction: row; /* Keep menu items inline */
+    justify-content: flex-end; /* Align menu items to the right */
+    width: auto; /* Auto width for the menu */
   }
 
   ul li a {
