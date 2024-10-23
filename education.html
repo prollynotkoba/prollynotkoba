@@ -80,8 +80,8 @@
       cursor: pointer;
     }
 
-    .checkbox{
-       font-size: 30px;
+    .checkbox {
+      font-size: 30px;
       float: right;
       line-height: 80px;
       margin-right: 40px;
@@ -106,10 +106,9 @@
       border: 2px solid transparent;
       font-weight: 600;
       color: var(--text-dark);
-      transition:border-color 0.3s, color 0.3s;
+      transition: border-color 0.3s, color 0.3s;
     }
 
-    /* Corrected hover selector */
     ul li a:hover {
       border-top-color: var(--secondary-color);
       border-bottom-color: var(--secondary-color);
@@ -119,98 +118,99 @@
     .section {
       padding-top: 100px;
     }
-    
+
     .timeline {
-        position: relative;
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 50px 0;
-      }
+      position: relative;
+      max-width: 1200px;
+      margin: 100px auto;
+      padding: 50px 0;
+    }
 
-      .timeline::after {
-        content: '';
-        position: absolute;
-        width: 6px;
-        background-color: var(--primary-color);
-        top: 0;
-        bottom: 0;
-        left: 50%;
-        margin-left: -3px;
-      }
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      background-color: var(--primary-color);
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -3px;
+    }
 
-      .timeline-item {
-        padding: 20px 40px;
-        position: relative;
-        background-color: inherit;
-        width: 50%;
-      }
+    .timeline-item {
+      padding: 10px 50px;
+      position: relative;
+      background-color: var(--extra-light);
+      width: 50%;
+    }
 
-      .timeline-item::after {
-        content: '';
-        position: absolute;
-        width: 25px;
-        height: 25px;
-        right: -17px;
-        background-color: #fff;
-        border: 4px solid var(--secondary-color);
-        top: 15px;
-        border-radius: 50%;
-        z-index: 1;
-      }
+    .timeline-item::after {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      right: -17px;
+      background-color: #fff;
+      border: 4px solid var(--secondary-color);
+      top: 15px;
+      border-radius: 50%;
+      z-index: 1;
+    }
 
-      .timeline-item:nth-child(odd) {
-        left: 0;
-      }
+    .timeline-item:nth-child(odd) {
+      left: 0;
+    }
 
-      .timeline-item:nth-child(even) {
-        left: 50%;
-      }
+    .timeline-item:nth-child(even) {
+      left: 50%;
+    }
 
-      .timeline-item:nth-child(even)::after {
-        left: -16px;
-      }
+    .timeline-item:nth -child(even)::after {
+      left: -16px;
+    }
 
-      .timeline-content {
-        padding: 20px 30px;
-        background-color: white;
-        position: relative;
-        border-radius: 6px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-      }
+    .timeline-content {
+      padding: 20px 30px;
+      background-color: white;
+      position: relative;
+      border-radius: 6px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
 
-      .current-education, .past-education {
-        margin-bottom: 20px;
-      }
+    .current-education, .past-education {
+      margin-bottom: 20px;
+      padding: 20px 30px;
+    }
 
-      h1.current, h1.past {
-        font-size: 1.5em;
-        color: #333;
-        margin-bottom: 10px;
-      }
+    h1.current, h1.past {
+      font-size: 1.5em;
+      color: #333;
+      margin-bottom: 10px;
+    }
 
-      h3.yr {
-        font-size: 1.2em;
-        color: #777;
-        margin-bottom: 15px;
-      }
+    h3.yr {
+      font-size: 1.2em;
+      color: #777;
+      margin-bottom: 15px;
+    }
 
-      ul {
-        margin-left: 20px;
-        margin-bottom: 15px;
-      }
+    ul {
+      margin-left: 20px;
+      margin-bottom: 15px;
+    }
 
-      .image-container {
-        text-align: center;
-      }
+    .image-container {
+      text-align: center;
+    }
 
-      .image-container img {
-        max-width: 100px;
-        height: auto;
-        border-radius: 5px;
-      }
+    .image-container img {
+      max-width: 100px;
+      height: auto;
+      border-radius: 5px;
+    }
+
     /* Responsive design for smaller screens */
     @media screen and (max-width: 600px) {
-
       .nav_content {
         padding: 1rem 0.5rem;
       }
@@ -283,24 +283,29 @@
       }
     }
 
-     @media (max-width: 952px) {
-       nav ul li a{
-         font-size: 2rem; 
-       }
-     }
+    @media (max-width: 952px) {
+      nav ul li a {
+        font-size: 2rem; 
+      }
+    }
 
     .educational-title {
       margin-top: 3rem;
-      text-align: center; /* Center the text */
-      font-size: 2rem; /* Font size */
-      font-weight: 1500; /* Bold text */
-      color: var(--text-dark); /* Use your defined color */
+      text-align: center; 
+      font-size: 2rem; 
+      font-weight: 1500; 
+      color: var(--text-dark); 
     }
   </style>
 </head>
   <body>
-    <nav><div class="nav_content">
-      <div class="logo"><a href="main.html"><img src="my assets/koba.jpg" alt="Koba Logo" width="200px"></a></div>
+    <nav>
+      <div class="nav_content">
+        <div class="logo">
+          <a href="main.html">
+            <img src="my assets/koba.jpg" alt="Koba Logo" width="200px">
+          </a>
+        </div>
         <label for="check" class="checkbox">
           <i class="ri-menu-line"></i>
         </label>
@@ -325,7 +330,7 @@
             <div class="image-container">
               <div class="image1">
                 <a href="https://umak.edu.ph/">
-                  <img src="my assets/Umak.png" alt="umak-logo">
+                  <img src="my assets/Umak.png" alt="um ak-logo">
                 </a>
               </div>
             </div>
@@ -378,7 +383,6 @@
             </div>
           </div>
         </div>
-      </div>
       </div>
     </section>
   </body>
