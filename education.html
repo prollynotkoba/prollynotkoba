@@ -160,7 +160,7 @@
       background-color: white;
       position: relative;
       border-radius:  6px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      box-shadow : 0 4px 10px rgba(0, 0, 0, 0.2);
     }
 
     .current-education, .past-education {
@@ -197,9 +197,7 @@
     /* Responsive design for smaller screens */
     @media screen and (max-width: 600px) {
       .nav_content {
-        width: 752px;
-        height: 50px;
-        padding: 0.25rem 0.5rem;
+        padding: 1rem 0.5rem;
       }
 
       nav .logo a {
@@ -226,23 +224,27 @@
       
       .timeline-item {
         width: 100%;
-        padding-left: 50px;
-        padding-right: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
       }
       
       .timeline-item::after {
-        left: 15px;
+        left: 10px;
+        width: 15px;
+        height: 15px;
+        top: 10px;
       }
       
       .timeline-item:nth-child(even) {
         left: 0%;
       }
+      
+      .timeline-content {
+        padding: 15px 20px;
+      }
     }
 
     @media (max-width: 850px) {
-      .nav_content {
-        width: 100%;
-      }
       nav .checkbox {
         display: block;
       }
@@ -325,7 +327,7 @@
             <div class="image-container">
               <a href="https://makatihs.depedmakati.ph/">
                 <img src="my assets/Mhs.png" alt="mhs-logo">
- </a>
+              </a>
             </div>
           </div>
         </div>
