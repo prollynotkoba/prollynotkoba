@@ -46,17 +46,6 @@
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
-    nav ul {
-        float: right;
-        margin-right: 20px;
-      }
-    
-      nav ul li {
-        display: inline-block;
-        line-height: 80px;
-        margin: 0 5px;
-      }
-
     .nav_content {
       max-width: var(--max-width);
       margin: auto;
@@ -95,7 +84,6 @@
       display: flex;
       align-items: center;
       gap: 1rem;
-      list-style: none;
       transition: left 0.4s;
     }
 
@@ -104,10 +92,9 @@
       border: 2px solid transparent;
       font-weight: 600;
       color: var(--text-dark);
-      transition:border-color 0.3s, color 0.3s;
+      transition: border-color 0.3s, color 0.3s;
     }
 
-    /* Corrected hover selector */
     ul li a:hover {
       border-top-color: var(--secondary-color);
       border-bottom-color: var(--secondary-color);
@@ -119,96 +106,96 @@
     }
     
     .timeline {
-        position: relative;
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 50px 0;
-      }
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 50px 0;
+    }
 
-      .timeline::after {
-        content: '';
-        position: absolute;
-        width: 6px;
-        background-color: var(--primary-color);
-        top: 0;
-        bottom: 0;
-        left: 50%;
-        margin-left: -3px;
-      }
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      background-color: var(--primary-color);
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -3px;
+    }
 
-      .timeline-item {
-        padding: 20px 40px;
-        position: relative;
-        background-color: inherit;
-        width: 50%;
-      }
+    .timeline-item {
+      padding: 20px 40px;
+      position: relative;
+      background-color: inherit;
+      width: 50%;
+    }
 
-      .timeline-item::after {
-        content: '';
-        position: absolute;
-        width: 25px;
-        height: 25px;
-        right: -17px;
-        background-color: #fff;
-        border: 4px solid var(--secondary-color);
-        top: 15px;
-        border-radius: 50%;
-        z-index: 1;
-      }
+    .timeline-item::after {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      right: -17px;
+      background-color: #fff;
+      border: 4px solid var(--secondary-color);
+      top: 15px;
+      border-radius: 50%;
+      z-index: 1;
+    }
 
-      .timeline-item:nth-child(odd) {
-        left: 0;
-      }
+    .timeline-item:nth-child(odd) {
+      left: 0;
+    }
 
-      .timeline-item:nth-child(even) {
-        left: 50%;
-      }
+    .timeline-item:nth-child(even) {
+      left: 50%;
+    }
 
-      .timeline-item:nth-child(even)::after {
-        left: -16px;
-      }
+    .timeline-item:nth-child(even)::after {
+      left: -16px;
+    }
 
-      .timeline-content {
-        padding: 20px 30px;
-        background-color: white;
-        position: relative;
-        border-radius: 6px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-      }
+    .timeline-content {
+      padding: 20px 30px;
+      background-color: white;
+      position: relative;
+      border-radius:  6px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
 
-      .current-education, .past-education {
-        margin-bottom: 20px;
-      }
+    .current-education, .past-education {
+      margin-bottom: 20px;
+    }
 
-      h1.current, h1.past {
-        font-size: 1.5em;
-        color: #333;
-        margin-bottom: 10px;
-      }
+    h1.current, h1.past {
+      font-size: 1.5em;
+      color: #333;
+      margin-bottom: 10px;
+    }
 
-      h3.yr {
-        font-size: 1.2em;
-        color: #777;
-        margin-bottom: 15px;
-      }
+    h3.yr {
+      font-size: 1.2em;
+      color: #777;
+      margin-bottom: 15px;
+    }
 
-      ul {
-        margin-left: 20px;
-        margin-bottom: 15px;
-      }
+    ul {
+      margin-left: 20px;
+      margin-bottom: 15px;
+    }
 
-      .image-container {
-        text-align: center;
-      }
+    .image-container {
+      text-align: center;
+    }
 
-      .image-container img {
-        max-width: 100px;
-        height: auto;
-        border-radius: 5px;
-      }
+    .image-container img {
+      max-width: 100px;
+      height: auto;
+      border-radius: 5px;
+    }
+
     /* Responsive design for smaller screens */
     @media screen and (max-width: 600px) {
-
       .nav_content {
         padding: 1rem 0.5rem;
       }
@@ -279,22 +266,27 @@
 
     .educational-title {
       margin-top: 3rem;
-      text-align: center; /* Center the text */
-      font-size: 2rem; /* Font size */
-      font-weight: 1500; /* Bold text */
-      color: var(--text-dark); /* Use your defined color */
+      text-align: center; 
+      font-size: 2rem; 
+      font-weight: 1500; 
+      color: var(--text-dark); 
     }
   </style>
 </head>
   <body>
-    <nav><div class="nav_content">
-      <div class="logo"><a href="index.html"><img src="my assets/koba.jpg" alt="Koba Logo" width="200px"></a></div>
+    <nav>
+      <div class="nav_content">
+        <div class="logo">
+          <a href="main.html">
+            <img src="my assets/koba.jpg" alt="Koba Logo" width="200px">
+          </a>
+        </div>
         <label for="check" class="checkbox">
           <i class="ri-menu-line"></i>
         </label>
         <input type="checkbox" name="check" id="check">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="main.html">Home</a></li>
           <li><a href="education.html">Education</a></li>
           <li><a href="skills.html">Skills</a></li>
           <li><a href="experience.html">Experience</a></li>
@@ -311,11 +303,9 @@
             <h1>Diploma in Application Development</h1>
             <h3 class="yr">2024-Present</h3>
             <div class="image-container">
-              <div class="image1">
-                <a href="https://umak.edu.ph/">
-                  <img src="my assets/Umak.png" alt="umak-logo">
-                </a>
-              </div>
+              <a href="https://umak.edu.ph/">
+                <img src="my assets/Umak.png" alt="umak-logo">
+              </a>
             </div>
           </div>
         </div>
@@ -325,14 +315,12 @@
             <h1 class="past">Makati High School</h1>
             <h1>Senior High School - ICT Programming</h1>
             <h3 class="yr">2021-2023</h3>
-            <h4>Graduated with Honors</h4>
+            <h4>Graduated with Honors</h4 >
             
             <div class="image-container">
-              <div class="image2">
-                <a href="https://makatihs.depedmakati.ph/">
-                  <img src="my assets/Mhs.png" alt="mhs-logo">
-                </a>
-              </div>
+              <a href="https://makatihs.depedmakati.ph/">
+                <img src="my assets/Mhs.png" alt="mhs-logo">
+ </a>
             </div>
           </div>
         </div>
@@ -344,11 +332,9 @@
             <h3 class="yr">2017-2021</h3>
             
             <div class="image-container">
-              <div class="image2">
-                <a href="https://makatihs.depedmakati.ph/">
-                  <img src="my assets/Mhs.png" alt="mhs-logo">
-                </a>
-              </div>
+              <a href="https://makatihs.depedmakati.ph/">
+                <img src="my assets/Mhs.png" alt="mhs-logo">
+              </a>
             </div>
           </div>
         </div>
@@ -358,15 +344,12 @@
             <h1 class="past">Sta Ana Elementary School</h1>
             <h3 class="yr">2009-2017</h3>
             <div class="image-container">
-              <div class="image3">
-                <a href="https://www.facebook.com/SAESManila/">
-                  <img src="my assets/saes.png" alt="saes-logo">
-                </a>
-              </div>
+              <a href="https://www.facebook.com/SAESManila/">
+                <img src="my assets/saes.png" alt="saes-logo">
+              </a>
             </div>
           </div>
         </div>
-      </div>
       </div>
     </section>
   </body>
