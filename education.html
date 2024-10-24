@@ -55,7 +55,7 @@
     }
 
     nav .logo a {
-      font-size: 1.5rem;
+      font-size: 2rem;
       font-weight: 600;
       color: var(--primary-color);
       transition: 0.3s;
@@ -83,6 +83,7 @@
       display: flex;
       align-items: center;
       gap: 1rem;
+      list-style: none;
       transition: left 0.4s;
     }
 
@@ -91,7 +92,7 @@
       border: 2px solid transparent;
       font-weight: 600;
       color: var(--text-dark);
-      transition: border-color 0.3s, color 0.3s;
+      transition: 0.3s;
     }
 
     ul li a:hover {
@@ -201,11 +202,11 @@
       }
 
       nav .logo a {
-        font-size: 1.5rem;
+        font-size: 2rem;
       }
 
       nav .checkbox i {
-        font-size: 1.3rem;
+        font-size: 2rem;
       }
 
       ul {
@@ -214,7 +215,7 @@
       }
 
       ul li a {
-        font-size: 1rem;
+        font-size: 1.25rem;
         padding: 0.3rem 0.5rem;
       }
 
@@ -246,13 +247,13 @@
       }
     }
 
-    @media (max-width: 850px) {
+    @media (max-width: 750px) {
       nav .checkbox {
         display: block;
       }
 
       ul {
-        position: fixed;
+        position: absolute;
         width: 100%;
         height: calc(100vh - 85px);
         left: -100%;
@@ -261,7 +262,6 @@
         flex-direction: column;
         justify-content: center;
         gap: 3rem;
-        transition: left 0.3s ease;
       }
 
       nav #check:checked ~ ul {
@@ -269,7 +269,7 @@
       }
 
       ul li a {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
       }
     }
 
